@@ -1,0 +1,414 @@
+/*
+@import url(../../../applications/dashboard/design/style.css);
+*/
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=latin,greek);
+
+body {
+	font-family: 'Open Sans', Verdana, Arial, sans-serif;
+}
+
+#Head a {
+	font-size: 1.3em;
+}
+.Item .Title, .Item .BlockTitle {
+	font-size: 18px;
+}
+
+.Meta {
+	font-size: 12px !important;
+}
+
+.Message {
+	line-height: 1.3;
+	font-size: 15px;
+}
+
+.Pager a,
+.Pager span  {
+	font-size: 18px;
+}
+
+.BigButton,
+.Button,
+.NavButton {
+	font-size: 15px;
+}
+/*--------------------------------------------------------------
+Colors
+--------------------------------------------------------------*/
+::selection {
+	background: #FCD91D;
+	color: #000;
+	}
+::-moz-selection {
+	background: #FCD91D;
+	color: #000;
+}
+
+body {
+	background: #fff;
+	color: #000;
+}
+
+
+a {
+	color: #000;
+}
+	a:hover {
+		color: #FF6347;
+
+		-webkit-transition  : border .1s, color .1s;
+		-moz-transition     : border .1s, color .1s;
+		transition          : border .1s, color .1s;
+	}
+	.SiteMenu a:hover {
+		text-decoration: none;
+		border-bottom: 1px solid #000;
+	}
+	.Message a {
+		color: #000;
+		border-bottom: 1px solid #FF6347;
+	}
+	.Message a:visited {
+		border-bottom: 1px dotted #ccc;
+	}
+	.Message a:hover {
+		color: #FF6347;
+		border-bottom: 1px solid #FF6347;
+	}
+
+.BigButton,
+.Button,
+.NavButton {
+	background: #f8f8f8;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	border: 1px solid #999;
+	box-shadow        : none;
+	-moz-box-shadow   : none;
+	-webkit-box-shadow: none;
+	}
+	.BigButton:hover,
+	.Button:hover,
+	.NavButton:hover {
+		border: 1px solid #666;
+		box-shadow        : 0px 0px 5px #aaa;
+		-moz-box-shadow   : 0px 0px 5px #aaa;
+		-webkit-box-shadow: 0px 0px 5px #aaa;
+	}
+	.BigButton:focus,
+	.Button:focus,
+	.NavButton:focus {
+		background: #ccc;		
+		box-shadow        : none;
+		-moz-box-shadow   : none;
+		-webkit-box-shadow: none;
+	}
+
+#Head {
+	background: none;
+}
+
+#Head a {
+	color: #000;
+}
+
+.CommentHeading {
+	height: 0;
+	overflow: hidden;
+
+	border-bottom: 1px solid #eee;
+}
+
+ul.DataList li.Item,
+ul.PanelInfo li {
+	background: none;
+	border-bottom: 1px solid #eee;
+}
+
+.Meta,
+.Meta a {
+	color: #999 !important;
+}
+
+.Count {
+	background: none;
+	color: inherit;
+}
+
+.FormWrapper {
+	background: none;
+}
+
+.Pager .Highlight {
+	color: #FF6347;
+	text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+Search
+--------------------------------------------------------------*/
+#Head .SiteSearch form {
+	padding: 0.25em;
+
+	background: #fff;
+	border: 1px solid #efefef;
+	border-radius: 30px;
+}
+
+#Head .SiteSearch .InputBox {
+	width: auto;
+
+	background: none;
+	color: #444;
+	border: none;
+	font-size: 15px;
+}
+
+#Head .SiteSearch .Button {
+	background: none;
+}
+
+
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
+body {
+	padding: 0;
+}
+
+body > #Frame > .Head {
+	padding: 6em 2em 2em 2em;
+}
+
+.Row {
+	width: auto;
+	max-width: 960px;
+}
+
+.SiteMenu {
+	white-space: normal;
+}
+
+#Panel {
+	float: right;
+}
+	#Panel .FilterMenu li, .PanelInfo li {
+		padding: 1em 0;
+	}
+
+#Body .ContentColumn {
+	margin: 0px 230px 0px 0;
+}
+
+ul.DataList li.Item,
+.BreadcrumbsWrapper,
+.HomepageTitle,
+.PageTitle,
+.MessageForm,
+.CommentForm,
+.DiscussionForm,
+#Content .Profile,
+.ProfileOptions {
+	padding: 1em;
+}
+
+ul.PanelInfo li {
+	padding: 1em;
+}
+
+.AdminCheck {
+	float: right;
+}
+
+.Meta {
+	text-align: right;
+}
+
+.Meta .Category {
+	float: left;	
+	display: block;
+}
+
+.Meta .ViewCount,
+.Meta .CommentCount,
+.Meta .DiscussionCount,
+.Meta .RSS,
+.Options .OptionsMenu,
+.Options .Bookmark,
+.AdminCheck input {
+	opacity: 0;
+
+	-webkit-transition  : opacity .3s;
+	-moz-transition     : opacity .3s;
+	transition          : opacity .3s;
+} 
+	.Item:hover .ViewCount,
+	.Item:hover .CommentCount,
+	.Item:hover .DiscussionCount,
+	.Item:hover .RSS,
+	.Item:hover .Options .OptionsMenu,	
+	.Item:hover .Options .Bookmark,	
+	.Item .Options .Bookmarked,
+	.Item:hover .AdminCheck input,
+	.AdminCheck input:checked {
+		opacity: 1;
+	}
+
+.FormWrapper {
+	padding: 0 !important;
+}
+
+.CommentFormWrap .PhotoWrap {
+	display: none;
+}
+
+#Form_PostComment,
+#Form_PostDiscussion {
+	display: block;
+
+	margin: 1em 0;
+	padding: 1em;
+}
+
+.BeforeCommentHeading,
+.Pager {
+	float: none;
+	display: block;
+
+	text-align: center;
+}
+	.Pager a,
+	.Pager span {
+		display: inline-block;
+		padding: 1em;
+	}
+
+.PoweredByVanilla {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+Common
+--------------------------------------------------------------*/
+
+pre, code {
+	background: rgba(0,0,0,0.3);
+	border: none;
+}
+	pre code {
+		display: block;
+
+		padding: 1em;
+		background: none;
+
+	}
+
+blockquote.Quote {
+	background: none;
+}
+
+mark {
+	background: #FCD91D;
+	color: #000;
+}
+
+
+/*--------------------------------------------------------------
+Panels
+--------------------------------------------------------------*/
+
+#LatestPostList .Condensed {
+	font-size: 0.9em;
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+Van2Shout plugin
+--------------------------------------------------------------*/
+
+#shoutboxinput {
+	margin: 10px 10px 30px 0;
+	padding: 15px;
+	width: 100% !important;
+
+	background: none;
+	border: 1px solid #bbb;
+}
+
+#van2shoutsubmit {
+	display: none;
+}
+
+#shoutboxcontent font[color="grey"] {
+	float: right;
+}
+
+#van2shout h4 {
+	border-bottom: 1px solid #bbb;
+	font-size: 1em;
+}
+
+#van2shout,
+#van2shout + iframe {
+	/*display: none*/
+}
+
+/*--------------------------------------------------------------
+Responsiveness
+--------------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+
+	.Row {
+		width: auto;
+		max-width: auto;
+	}
+
+	#Head .SiteSearch {
+		float: none;
+
+		margin: 1em 0;
+	}
+
+	#Panel {
+		float: none;
+
+		margin: 2em 0;
+		padding: 2em;
+		width: auto;
+
+		-webkit-box-shadow: inset 0 0 1.5rem rgba(0,0,0,.5);
+		-moz-box-shadow   : inset 0 0 1.5rem rgba(0,0,0,.5);
+		box-shadow        : inset 0 0 1.5rem rgba(0,0,0,.5);
+
+		mask: url('./sawtooth.svg#mask');
+		-webkit-mask-box-image: url('./sawtooth.svg') 10 0 10 0 repeat;
+	}
+		#Panel .Box,
+		#Panel .BoxFilter {
+			max-height: 0;
+			overflow: hidden;
+
+			-webkit-transition  : max-height 1s;
+			-moz-transition     : max-height 1s;
+			transition          : max-height 1s;
+
+			-webkit-transition-delay: .3s;
+			-moz-transition-delay   : .3s;
+			transition-delay        : .3s;
+		}
+		#Panel:hover .Box,
+		#Panel:hover .BoxFilter {
+			max-height: 500px;
+		}
+
+	#Body .ContentColumn {
+		margin: 0;
+	}
+
+}
