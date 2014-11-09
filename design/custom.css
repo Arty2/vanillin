@@ -145,8 +145,9 @@ ul.PanelInfo li {
 }
 
 .Pager .Highlight {
-	color: #FF6347;
-	text-decoration: underline;
+	border: 1px solid #777;
+	border-radius: 50%;
+	color: #777;
 }
 
 /*--------------------------------------------------------------
@@ -226,11 +227,17 @@ ul.PanelInfo li {
 }
 
 .Meta {
+	position: relative;
 	text-align: right;
 }
 
 .Meta .Category {
-	float: left;	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.Meta .LastCommentDate {
 	display: block;
 }
 
@@ -285,7 +292,12 @@ ul.PanelInfo li {
 	.Pager a,
 	.Pager span {
 		display: inline-block;
-		padding: 1em;
+		margin: 0.5em;
+		padding: 0.5em;
+		height: 1.5em;
+		width: 1.5em;
+
+		line-height: 1.5em;
 	}
 
 .PoweredByVanilla {
