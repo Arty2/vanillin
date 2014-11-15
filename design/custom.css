@@ -144,9 +144,12 @@ ul.PanelInfo li {
 	background: none;
 }
 
+
+.Pager a:active {
+	border-color: #FF6347;
+}
 .Pager .Highlight {
-	border: 1px solid #777;
-	border-radius: 50%;
+	border-color: #777;
 	color: #777;
 }
 
@@ -220,6 +223,10 @@ ul.DataList li.Item,
 
 ul.PanelInfo li {
 	padding: 1em;
+}
+
+.Unread .Title a::before {
+	content: '* ';
 }
 
 .AdminCheck {
@@ -297,6 +304,9 @@ ul.PanelInfo li {
 		height: 1.5em;
 		width: 1.5em;
 
+
+		border: 1px solid transparent;
+		border-radius: 50%;
 		line-height: 1.5em;
 	}
 
@@ -422,5 +432,12 @@ Responsiveness
 	#Body .ContentColumn {
 		margin: 0;
 	}
-
+	/* disable EpicEditor plugin untill it works on mobile */
+	.js-editor {
+		display: none;
+	}
+	.EditCommentForm textarea.TextBox, .CommentForm textarea.TextBox {
+		display: block !important;
+		min-height: 200px;
+	}
 }
