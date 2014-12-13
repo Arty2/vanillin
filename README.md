@@ -10,7 +10,6 @@ A minimal, mobile friendly [Vanilla forums](http://vanillaforums.org/) <del>them
 * make a bigger screenshot with Blokk text
 * add an icon font to replace Vanilla's default icons
 * fix some display issues with .Meta in mobile screens
-* unhide login box
 
 ---
 

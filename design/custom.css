@@ -70,11 +70,15 @@ a {
 		border-bottom: 1px solid #000;
 	}
 	.Message a {
+		display: inline-block;
+
 		color: #000;
 		border-bottom: 1px solid #FF6347;
+		line-height: 1.1;
+
 	}
 	.Message a:visited {
-		border-bottom: 1px dotted #ccc;
+		border-bottom: 1px solid #ccc;
 	}
 	.Message a:hover {
 		color: #FF6347;
@@ -265,9 +269,12 @@ ul.PanelInfo li {
 	.Item:hover .CommentCount,
 	.Item:hover .DiscussionCount,
 	.Item:hover .RSS,
-	.Item:hover .Options .OptionsMenu,	
-	.Item:hover .Options .Bookmark,	
 	.Item .Options .Bookmarked,
+	.Discussion:hover .Options .OptionsMenu,	
+	.Discussion:hover .Options .Bookmark,
+	.Discussion:hover .AdminCheck input,
+	.Item:hover .Options .OptionsMenu,	
+	.Item:hover .Options .Bookmark,
 	.Item:hover .AdminCheck input,
 	.AdminCheck input:checked {
 		opacity: 1;
