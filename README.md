@@ -7,9 +7,8 @@
 A minimal, mobile friendly [Vanilla forums](http://vanillaforums.org/) <del>theme</del> extract. Distraction free with generous whitespace, ideal for text heavy group conversations.
 
 ##To do
-* make a bigger screenshot with Blokk text
-* add an icon font to replace Vanilla's default icons
-* fix some display issues with .Meta in mobile screens
+* make a screenshot with Blokk text (or some Greek scrible font)
+* add an icon font for Vanilla's default icons
 
 ---
 
